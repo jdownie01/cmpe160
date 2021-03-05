@@ -1,0 +1,377 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+CMPE 160 Laboratory Exercise 5
+\end_layout
+
+\begin_layout Standard
+Combinational Logic Circuit Design Using Karnaugh Map Simplification
+\end_layout
+
+\begin_layout Standard
+Jake Downie Performed February 22nd, 2021 Submitted March 1st, 2021
+\end_layout
+
+\begin_layout Standard
+Lab Section 5 Instructor: Professor Kurdziel TA: Michael Nichols, Sam Myers,
+ James Mcdaid, Ryan Blow Lecture Section 2 Professor: Professor Byers
+\end_layout
+
+\begin_layout Standard
+By submitting this report, you attest that you neither have given nor have
+ received any assistance (including writing, collecting data, plotting figures,
+ tables or graphs, or using previous student reports as a reference), and
+ you further acknowledge that giving or receiving such assistance will result
+ in a failing grade for this course.
+ Your Signature: Jake Downie
+\end_layout
+
+\begin_layout Standard
+Abstract
+\end_layout
+
+\begin_layout Standard
+The purpose of this exercise was to apply Karnaugh Map simplification to
+ a boolean expression.
+ The logic circuit's POS and SOP were both implemented.
+ The idea was that the smaller solution would be implemented as it would
+ have a lower chip count or a lower EGC cost.
+ These simplifications were implemented with a test benech to ensure the
+ expected outcomes were successful.
+ The circuit performed as expected.
+ 
+\end_layout
+
+\begin_layout Standard
+Design Methodology
+\end_layout
+
+\begin_layout Standard
+First a truth table was completed for the implementation of the Combinational
+ Logic Circuit as seen in Table 1.1.
+\end_layout
+
+\begin_layout Standard
+Table 1.1: Karnaugh map for FSOP
+\end_layout
+
+\begin_layout Standard
+00 01 11 10 00 1 0 1 1 01 1 0 1 1 11 0 1 1 1 10 0 0 0 0
+\end_layout
+
+\begin_layout Standard
+Groups: (0,4,2,6) (3,2,7,6) (13,15) (6, 7, 15, 14) Fsop: A'D'+ABD+A'C+BC
+\end_layout
+
+\begin_layout Standard
+The Fsop is the Sum of Products formed by grouping the midterms, in Table
+ 1.2, Fpos is the Product of Sums formed by the grouping of the maxterms.
+ 
+\end_layout
+
+\begin_layout Standard
+Table 1.2: Karnaugh map for FPOS
+\end_layout
+
+\begin_layout Standard
+00 01 11 10 00 1 0 1 1 01 1 0 1 1 11 0 1 1 1 10 0 0 0 0
+\end_layout
+
+\begin_layout Standard
+Groups: (1,5)(1,9)(12,8)(8,9,11,10) Fpos: (A+C+D')(A'+B)(A'+C+D)
+\end_layout
+
+\begin_layout Standard
+After the Karnaugh Map was constructed, the simplified boolean expression
+ was created in Quartus.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 1.4:The completed circuit diagram
+\end_layout
+
+\begin_layout Standard
+As seen in Figure 1.4, the SOP and the POS both had a chip count of 4 however,
+ the POS had a EGC cost of 7 while the SOP had an POS cost of 8.
+ 
+\end_layout
+
+\begin_layout Standard
+The final decision was to construct the POS.
+ As seen in Figure 1.5, a parts placement diagram was created.
+ This didn't save us in chip count, although the logic was less expensive.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 1.5: Parts placement diagram of the POS circuit 
+\end_layout
+
+\begin_layout Standard
+Figure 1.5 shows the POS circuit, fully wired up with the VCC and GND.
+ As seen, the chip count is the same as the SOP.
+ 
+\end_layout
+
+\begin_layout Standard
+Results and Analysis
+\end_layout
+
+\begin_layout Standard
+Initially, problems were encountered with the naming conventions on the
+ VHDL files not lining up correctly.
+ Through some quick editing, they were repaired to perform as required.
+ The component names didn't match in the test bench file and the VHDL file
+ created through modelsim.
+ As seen in Figure 1.6, those inconsistencies were corrected.
+ 
+\end_layout
+
+\begin_layout Standard
+LIBRARY ieee; USE ieee.std_logic_1164.all; LIBRARY work; ENTITY ex5_tb_c IS
+ PORT ( A : IN STD_LOGIC; B : IN STD_LOGIC; C : IN STD_LOGIC; D : IN STD_LOGIC;
+ F_SOP : OUT STD_LOGIC; F_POS : OUT STD_LOGIC ); END ex5_tb_c; ARCHITECTURE
+ bdf_type OF ex5_tb_c IS SIGNAL SYNTHESIZED_WIRE_0 : STD_LOGIC; SIGNAL SYNTHESIZ
+ED_WIRE_1 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_2 : STD_LOGIC; SIGNAL SYNTHESIZED
+_WIRE_20 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_4 : STD_LOGIC; SIGNAL SYNTHESIZED_
+WIRE_5 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_6 : STD_LOGIC; SIGNAL SYNTHESIZED_WI
+RE_7 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_8 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE
+_21 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_10 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE
+_11 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_14 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE
+_15 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_16 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE
+_17 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE_18 : STD_LOGIC; SIGNAL SYNTHESIZED_WIRE
+_19 : STD_LOGIC; BEGIN SYNTHESIZED_WIRE_15 <= SYNTHESIZED_WIRE_0 OR SYNTHESIZED_
+WIRE_1; SYNTHESIZED_WIRE_20 <= NOT(A); SYNTHESIZED_WIRE_2 <= NOT(SYNTHESIZED_WIR
+E_2); SYNTHESIZED_WIRE_18 <= C AND B; SYNTHESIZED_WIRE_16 <= C AND SYNTHESIZED_W
+IRE_20; F_POS <= SYNTHESIZED_WIRE_4 AND SYNTHESIZED_WIRE_5; SYNTHESIZED_WIRE_4
+ <= SYNTHESIZED_WIRE_6 AND SYNTHESIZED_WIRE_7; SYNTHESIZED_WIRE_19 <= B
+ AND A; SYNTHESIZED_WIRE_21 <= NOT(A); SYNTHESIZED_WIRE_11 <= NOT(D); SYNTHESIZE
+D_WIRE_14 <= NOT(D); SYNTHESIZED_WIRE_7 <= C OR SYNTHESIZED_WIRE_8; SYNTHESIZED_
+WIRE_8 <= SYNTHESIZED_WIRE_21 OR D; SYNTHESIZED_WIRE_5 <= SYNTHESIZED_WIRE_10
+ OR A; SYNTHESIZED_WIRE_10 <= SYNTHESIZED_WIRE_11 OR C; SYNTHESIZED_WIRE_6
+ <= SYNTHESIZED_WIRE_21 OR B; SYNTHESIZED_WIRE_1 <= SYNTHESIZED_WIRE_20
+ AND SYNTHESIZED_WIRE_14; SYNTHESIZED_WIRE_17 <= SYNTHESIZED_WIRE_15 OR
+ SYNTHESIZED_WIRE_16; F_SOP <= SYNTHESIZED_WIRE_17 OR SYNTHESIZED_WIRE_18;
+ SYNTHESIZED_WIRE_0 <= SYNTHESIZED_WIRE_19 AND D; END bdf_type; library
+ ieee; use ieee.std_logic_1164 .all ; use ieee.numeric_std.all;
+\end_layout
+
+\begin_layout Standard
+-------------------------------------------------------------------------------
+ -- In order for this test bench to work, your .bdf file and the the generated
+ -- .vhd file from Quartus must be named "Ex5.bdf" and "Ex5.vhd" -- Also, your
+ inputs must be named 'A', 'B', 'C', and 'D' and your outputs -- must be
+ named 'F_SOP' and 'F_POS' -----------------------------------------------------
+--------------------------
+\end_layout
+
+\begin_layout Standard
+entity ex5_tb is end ex5_tb;
+\end_layout
+
+\begin_layout Standard
+architecture test_bench of ex5_tb is
+\end_layout
+
+\begin_layout Standard
+-- component declaration for the Unit Under Test (UUT) component ex5_tb_c
+ port ( -- circuit inputs A : in std_logic; B : in std_logic; C : in std_logic;
+ D : in std_logic;
+\end_layout
+
+\begin_layout Standard
+-- circuit outputs F_SOP : out std_logic; F_POS : out std_logic); end component
+ ;
+\end_layout
+
+\begin_layout Standard
+-- signals to stimulate UUT inputs signal A : std_logic := '0'; signal B
+ : std_logic := '0'; signal C : std_logic := '0'; signal D : std_logic :=
+ '0';
+\end_layout
+
+\begin_layout Standard
+-- signals to read UUT outputs signal F_SOP : std_logic := '0'; signal F_POS
+ : std_logic := '0';
+\end_layout
+
+\begin_layout Standard
+begin -- Unit Under Test (UUT ) instance UUT: ex5_tb_c port map( A => A,
+ B => B, C => C, D => D, F_SOP => F_SOP, F_POS => F_POS);
+\end_layout
+
+\begin_layout Standard
+-- stimulus A <= not A after 400 ns; B <= not B after 200 ns; C <= not C
+ after 100 ns; D <= not D after 50 ns;
+\end_layout
+
+\begin_layout Standard
+end;
+\end_layout
+
+\begin_layout Standard
+Figure 1.6: Comparison of the source code files with the corrected component
+ names highlighted
+\end_layout
+
+\begin_layout Standard
+Because the test bench file is now properly referencing the created component,
+ the signals could be simulated correctly.
+ The now working VHDL files were run through ModelSim.
+ Through this, it was found that the generated waveforms for POS and the
+ SOP were the same.
+ This meant that the SOP and POS functions were equivalent and both also
+ had the same Part Count.
+ However, the POS function has a lower EGC cost.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 1.7 is a wave graph captured in quartus detailing levels of the inputs
+ and outputs showing the same wave for the SOP and the POS.
+\end_layout
+
+\begin_layout Standard
+SOP
+\end_layout
+
+\begin_layout Standard
+POS
+\end_layout
+
+\begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
+B
+\end_layout
+
+\begin_layout Standard
+C
+\end_layout
+
+\begin_layout Standard
+D
+\end_layout
+
+\begin_layout Standard
+Figure 1.7: Waveform of the SOP represented in black and the POS represented
+ in grey
+\end_layout
+
+\begin_layout Standard
+The circuit was then constructed with the reduced EGC cost and performed
+ as expected.
+ 
+\end_layout
+
+\begin_layout Standard
+Conclusion Through the simplification of boolean expressions with the use
+ of Karnaugh-maps, a logic circuit was designed and implemented.
+ The Karnaugh map made the simplification of the circuit simpler and more
+ efficient.
+ The created circuit was tested with both waveforms and physical testing
+ to ensure the expected outcomes.
+ With the SOP and POS functions being equivalent and having the same Part
+ Count, the POS function was selected to be constructed as it had a lower
+ EGC cost.
+ In the end, the circuit was successful with only minimal adjustments required.
+ 
+\end_layout
+
+\begin_layout Standard
+Questions For the SOP expression determined in Prelab Part 1, design a 2-level
+ NAND-NAND implementation.
+ Inverters are not counted towards the total and may only be used for the
+ first level.
+ Draw a schematic of this circuit in Altera Quartus II.
+ Part: 74LS00
+\end_layout
+
+\begin_layout Standard
+For the POS expression determined in Prelab Part 1, design a 2-level NOR-NOR
+ implementation Inverters are not counted towards the total and may only
+ be used before the first level.
+ Draw a schematic of this circuit in AlteraQuartus II.
+ Part: 74LS02
+\end_layout
+
+\end_body
+\end_document
