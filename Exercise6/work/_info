@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/jwd2488
+Eex6
+Z0 w1615103388
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+Z3 d/home/jwd2488/Classes/cmpe-160/Exercise6
+Z4 8/home/jwd2488/Classes/cmpe-160/Exercise6/ex6.vhd
+Z5 F/home/jwd2488/Classes/cmpe-160/Exercise6/ex6.vhd
+l0
+Z6 L25 1
+VjLQE4V3ZmRA2KnGNWV=E32
+!s100 72[BN2kYNf6<QzJTQ6Gk13
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1615103430
+!i10b 1
+Z9 !s108 1615103430.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise6/ex6.vhd|
+!s107 /home/jwd2488/Classes/cmpe-160/Exercise6/ex6.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abdf_type
+R1
+R2
+DEx4 work 3 ex6 0 22 jLQE4V3ZmRA2KnGNWV=E32
+!i122 4
+l50
+Z13 L36 57
+V6Gofo8l0[LmzjO1a=Y@EU0
+!s100 LgBBfoWo?@FC?e`WMcDD[2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+Z14 !s107 /home/jwd2488/Classes/cmpe-160/Exercise6/ex6.vhd|
+!i113 1
+R11
+R12
+Eex6_tb
+Z15 w1615103405
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 3
+R3
+Z17 8/home/jwd2488/Classes/cmpe-160/Exercise6/ex6_tb.vhd
+Z18 F/home/jwd2488/Classes/cmpe-160/Exercise6/ex6_tb.vhd
+l0
+L12 1
+V`6]N82Y3z3OL8<gEMVAQe0
+!s100 [WQ<PB;mc`B18=HI2C;CN0
+R7
+32
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise6/ex6_tb.vhd|
+Z20 !s107 /home/jwd2488/Classes/cmpe-160/Exercise6/ex6_tb.vhd|
+!i113 1
+R11
+R12
+Atest_bench
+R16
+R1
+R2
+DEx4 work 6 ex6_tb 0 22 `6]N82Y3z3OL8<gEMVAQe0
+!i122 3
+l38
+L15 38
+VKi_UMKVD=^BfImacJb:CT2
+!s100 :z1dI8WFn3ncUZNg2>l^Z0
+R7
+32
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 1
+R11
+R12
+Eex_6_c
+Z21 w1615102477
+R1
+R2
+!i122 0
+R3
+Z22 8/home/jwd2488/Classes/cmpe-160/Exercise6/ex_6_c.vhd
+Z23 F/home/jwd2488/Classes/cmpe-160/Exercise6/ex_6_c.vhd
+l0
+R6
+V]FmXPHod?o:;KRETOo37:1
+!s100 9B4AzA3PKkLC`Vac9PGi]3
+R7
+32
+Z24 !s110 1615102530
+!i10b 1
+Z25 !s108 1615102530.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise6/ex_6_c.vhd|
+Z27 !s107 /home/jwd2488/Classes/cmpe-160/Exercise6/ex_6_c.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+DEx4 work 6 ex_6_c 0 22 ]FmXPHod?o:;KRETOo37:1
+!i122 0
+l50
+R13
+V<<P8;Tbon3RV^gECBSjN83
+!s100 @mFoYbf6P_=27Hzm=fmna1
+R7
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R11
+R12
