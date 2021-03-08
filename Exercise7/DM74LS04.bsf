@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 112 176)
-	(text "inverter" (rect 5 0 51 15)(font "Intel Clear" (font_size 8)))
+	(text "DM74LS04" (rect 5 0 69 15)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 143 28 156)(font "Intel Clear" ))
 	(port
 		(pt 0 32)

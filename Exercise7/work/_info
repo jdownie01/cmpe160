@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/jwd2488
+Eex6_prelab_part2
+Z0 w1615173655
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 24
+Z3 d/home/jwd2488/Classes/cmpe-160/Exercise7
+Z4 8/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd
+Z5 F/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd
+l0
+L95 1
+VDMN>e6W7;=zHza33IJUC93
+!s100 Pd[0j<UT87D;Pj<RTEo^D1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1615173664
+!i10b 1
+Z8 !s108 1615173664.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd|
+Z10 !s107 /home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abdf_type
+R1
+R2
+Z13 DEx4 work 16 ex6_prelab_part2 0 22 DMN>e6W7;=zHza33IJUC93
+!i122 24
+l151
+Z14 L105 94
+Z15 VlW2A7dI3cEW;E9gDlUBFn0
+Z16 !s100 4VZch;RNNMKA?h_;mWDll3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eex7
+R0
+R1
+R2
+!i122 24
+R3
+R4
+R5
+l0
+L25 1
+VKzgg;2A]E_>JdCDzeF7270
+!s100 RWKzT1i2=bVSY[<l7PoFd2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+Z17 DEx4 work 3 ex7 0 22 Kzgg;2A]E_>JdCDzeF7270
+!i122 24
+l45
+Z18 L35 37
+Z19 VWk;6m0Bj<z[Dj@XOMla@l2
+Z20 !s100 =h]ZY7TX>a8A>ladS4HJN2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eex7_tb
+Z21 w1615169048
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 23
+R3
+Z23 8/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
+Z24 F/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
+l0
+L12 1
+V[4Ndib[cG7T9zcWWWRN;f1
+!s100 U8gaESY0FVn`C5lFjCK4o3
+R6
+32
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd|
+Z26 !s107 /home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd|
+!i113 1
+R11
+R12
+Atest_bench
+R22
+R1
+R2
+DEx4 work 6 ex7_tb 0 22 [4Ndib[cG7T9zcWWWRN;f1
+!i122 23
+l36
+L15 41
+VcAG5ojf`G^8M:A>3Ii5322
+!s100 FRGMcBb2;7;aIg]_6Gkz@2
+R6
+32
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
