@@ -7,6 +7,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture bdf_type of ex7
 -- Compiling entity ex6_prelab_part2
 -- Compiling architecture bdf_type of ex6_prelab_part2
+-- Compiling entity ex6_prelab_part2
+-- Compiling architecture bdf_type of ex6_prelab_part2
+-- Compiling entity ex6_prelab_part2
+-- Compiling architecture bdf_type of ex6_prelab_part2
 
 } {} {}} /home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

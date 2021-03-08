@@ -10,22 +10,22 @@ z2
 cModel Technology
 d/home/jwd2488
 Eex6_prelab_part2
-Z0 w1615173655
+Z0 w1615242043
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 24
+!i122 28
 Z3 d/home/jwd2488/Classes/cmpe-160/Exercise7
 Z4 8/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd
 Z5 F/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd
 l0
-L95 1
-VDMN>e6W7;=zHza33IJUC93
-!s100 Pd[0j<UT87D;Pj<RTEo^D1
+L313 1
+VP[g0Kb@P;Y9SWP`2OJam^3
+!s100 6?ib<gSeQfVAiz_MzhZDL3
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1615173664
+Z7 !s110 1615242047
 !i10b 1
-Z8 !s108 1615173664.000000
+Z8 !s108 1615242047.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd|
 Z10 !s107 /home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd|
 !i113 1
@@ -34,12 +34,12 @@ Z12 tExplicit 1 CvgOpt 0
 Abdf_type
 R1
 R2
-Z13 DEx4 work 16 ex6_prelab_part2 0 22 DMN>e6W7;=zHza33IJUC93
-!i122 24
-l151
-Z14 L105 94
-Z15 VlW2A7dI3cEW;E9gDlUBFn0
-Z16 !s100 4VZch;RNNMKA?h_;mWDll3
+DEx4 work 16 ex6_prelab_part2 0 22 P[g0Kb@P;Y9SWP`2OJam^3
+!i122 28
+l337
+L323 53
+V@jOE>S4jM>13YOHUhJ1f=2
+!s100 0zRNC;fm=?K;`>?UWl7gK1
 R6
 32
 R7
@@ -54,7 +54,7 @@ Eex7
 R0
 R1
 R2
-!i122 24
+!i122 28
 R3
 R4
 R5
@@ -75,12 +75,12 @@ R12
 Abdf_type
 R1
 R2
-Z17 DEx4 work 3 ex7 0 22 Kzgg;2A]E_>JdCDzeF7270
-!i122 24
+Z13 DEx4 work 3 ex7 0 22 Kzgg;2A]E_>JdCDzeF7270
+!i122 28
 l45
-Z18 L35 37
-Z19 VWk;6m0Bj<z[Dj@XOMla@l2
-Z20 !s100 =h]ZY7TX>a8A>ladS4HJN2
+Z14 L35 37
+Z15 VWk;6m0Bj<z[Dj@XOMla@l2
+Z16 !s100 =h]ZY7TX>a8A>ladS4HJN2
 R6
 32
 R7
@@ -92,14 +92,14 @@ R10
 R11
 R12
 Eex7_tb
-Z21 w1615169048
-Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z17 w1615169048
+Z18 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 23
+!i122 27
 R3
-Z23 8/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
-Z24 F/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
+Z19 8/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
+Z20 F/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd
 l0
 L12 1
 V[4Ndib[cG7T9zcWWWRN;f1
@@ -109,17 +109,17 @@ R6
 R7
 !i10b 1
 R8
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd|
-Z26 !s107 /home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd|
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd|
+Z22 !s107 /home/jwd2488/Classes/cmpe-160/Exercise7/ex7_tb.vhd|
 !i113 1
 R11
 R12
 Atest_bench
-R22
+R18
 R1
 R2
 DEx4 work 6 ex7_tb 0 22 [4Ndib[cG7T9zcWWWRN;f1
-!i122 23
+!i122 27
 l36
 L15 41
 VcAG5ojf`G^8M:A>3Ii5322
@@ -129,8 +129,8 @@ R6
 R7
 !i10b 1
 R8
-R25
-R26
+R21
+R22
 !i113 1
 R11
 R12

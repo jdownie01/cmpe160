@@ -1,0 +1,22 @@
+$date
+	Mon Mar  8 17:21:50 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+$scope module ex7_tb $end
+$var wire 1 ! Qn $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+1!
+#125000
+0!
+#500000
+1!
+#600000
+0!

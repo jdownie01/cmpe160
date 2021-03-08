@@ -1,0 +1,44 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(text "S0" (rect 240 256 256 271)(font "Intel Clear" (font_size 8)))
+(text "S1" (rect 344 256 359 271)(font "Intel Clear" (font_size 8)))
+(text "Cin" (rect 304 192 324 207)(font "Intel Clear" (font_size 8)))
+(text "Cout" (rect 280 208 308 223)(font "Intel Clear" (font_size 8)))
+(text "Cout" (rect 416 200 444 215)(font "Intel Clear" (font_size 8)))
+(text "B0" (rect 248 136 264 151)(font "Intel Clear" (font_size 8)))
+(text "A0" (rect 224 136 241 151)(font "Intel Clear" (font_size 8)))
+(text "A1" (rect 328 136 344 151)(font "Intel Clear" (font_size 8)))
+(text "B1" (rect 360 136 375 151)(font "Intel Clear" (font_size 8)))
+(text "0" (rect 168 200 177 215)(font "Intel Clear" (font_size 8)))
+(text "Cin" (rect 200 208 220 223)(font "Intel Clear" (font_size 8)))
+(line (pt 248 240)(pt 248 256))
+(line (pt 352 240)(pt 352 256))
+(line (pt 320 208)(pt 280 208))
+(line (pt 384 208)(pt 416 208))
+(line (pt 216 208)(pt 176 208))
+(line (pt 232 176)(pt 232 152))
+(line (pt 256 176)(pt 256 152))
+(line (pt 336 176)(pt 336 152))
+(line (pt 360 176)(pt 360 152))
+(rectangle (rect 216 176 280 240))
+(rectangle (rect 320 176 384 240))
