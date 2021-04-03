@@ -1,14 +1,8 @@
-/home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise7/ex7.vhd
+/home/jwd2488/Classes/cmpe-160/Exercise7/ex6_prelab_part2.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise7/ex6_prelab_part2.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity ex7
--- Compiling architecture bdf_type of ex7
--- Compiling entity ex6_prelab_part2
--- Compiling architecture bdf_type of ex6_prelab_part2
--- Compiling entity ex6_prelab_part2
--- Compiling architecture bdf_type of ex6_prelab_part2
 -- Compiling entity ex6_prelab_part2
 -- Compiling architecture bdf_type of ex6_prelab_part2
 

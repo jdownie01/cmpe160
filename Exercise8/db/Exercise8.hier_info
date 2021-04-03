@@ -1,0 +1,28 @@
+|Exercise8
+QA <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst.ACLR
+RST => inst1.ACLR
+RST => inst2.ACLR
+RST => inst3.ACLR
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+SIN => inst33.DATAIN
+SL => inst17.IN0
+SL => inst34.OE
+SL => inst18.IN0
+SL => inst28.OE
+SL => inst16.IN0
+SL => inst30.OE
+SL => inst32.OE
+SL => inst24.IN0
+A => inst34.DATAIN
+QB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst28.DATAIN
+QC <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C => inst30.DATAIN
+QD <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst32.DATAIN
+
+

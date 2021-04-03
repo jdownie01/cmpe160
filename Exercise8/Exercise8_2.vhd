@@ -1,0 +1,176 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- PROGRAM		"Quartus Prime"
+-- VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+-- CREATED		"Sun Mar 28 17:08:44 2021"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY Exercise8_2 IS 
+	PORT
+	(
+		CLK :  IN  STD_LOGIC;
+		RST :  IN  STD_LOGIC;
+		SIN :  IN  STD_LOGIC;
+		SL :  IN  STD_LOGIC;
+		A :  IN  STD_LOGIC;
+		B :  IN  STD_LOGIC;
+		C :  IN  STD_LOGIC;
+		D :  IN  STD_LOGIC;
+		QA :  OUT  STD_LOGIC;
+		QB :  OUT  STD_LOGIC;
+		QC :  OUT  STD_LOGIC;
+		QD :  OUT  STD_LOGIC
+	);
+END Exercise8_2;
+
+ARCHITECTURE bdf_type OF Exercise8_2 IS 
+
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_20 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	DFF_inst :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	DFF_inst2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_6 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_7 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_9 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_10 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_11 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_12 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_13 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_14 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_15 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_16 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_17 :  STD_LOGIC;
+SIGNAL	DFF_inst1 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_19 :  STD_LOGIC;
+
+
+BEGIN 
+QA <= DFF_inst;
+QB <= DFF_inst1;
+QC <= DFF_inst2;
+SYNTHESIZED_WIRE_20 <= '1';
+
+
+
+PROCESS(CLK,RST,SYNTHESIZED_WIRE_20)
+BEGIN
+IF (RST = '0') THEN
+	DFF_inst <= '0';
+ELSIF (SYNTHESIZED_WIRE_20 = '0') THEN
+	DFF_inst <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
+	DFF_inst <= SYNTHESIZED_WIRE_0;
+END IF;
+END PROCESS;
+
+
+PROCESS(CLK,RST,SYNTHESIZED_WIRE_20)
+BEGIN
+IF (RST = '0') THEN
+	DFF_inst1 <= '0';
+ELSIF (SYNTHESIZED_WIRE_20 = '0') THEN
+	DFF_inst1 <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
+	DFF_inst1 <= SYNTHESIZED_WIRE_2;
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_10 <= DFF_inst AND SYNTHESIZED_WIRE_4;
+
+
+SYNTHESIZED_WIRE_11 <= SL AND C;
+
+
+SYNTHESIZED_WIRE_13 <= SL AND D;
+
+
+SYNTHESIZED_WIRE_14 <= DFF_inst2 AND SYNTHESIZED_WIRE_5;
+
+
+SYNTHESIZED_WIRE_15 <= SL AND A;
+
+
+SYNTHESIZED_WIRE_16 <= SIN AND SYNTHESIZED_WIRE_6;
+
+
+SYNTHESIZED_WIRE_19 <= NOT(SL);
+
+
+
+SYNTHESIZED_WIRE_6 <= NOT(SL);
+
+
+
+SYNTHESIZED_WIRE_4 <= NOT(SL);
+
+
+
+PROCESS(CLK,RST,SYNTHESIZED_WIRE_20)
+BEGIN
+IF (RST = '0') THEN
+	DFF_inst2 <= '0';
+ELSIF (SYNTHESIZED_WIRE_20 = '0') THEN
+	DFF_inst2 <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
+	DFF_inst2 <= SYNTHESIZED_WIRE_7;
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_2 <= SYNTHESIZED_WIRE_9 OR SYNTHESIZED_WIRE_10;
+
+
+SYNTHESIZED_WIRE_7 <= SYNTHESIZED_WIRE_11 OR SYNTHESIZED_WIRE_12;
+
+
+SYNTHESIZED_WIRE_17 <= SYNTHESIZED_WIRE_13 OR SYNTHESIZED_WIRE_14;
+
+
+SYNTHESIZED_WIRE_0 <= SYNTHESIZED_WIRE_15 OR SYNTHESIZED_WIRE_16;
+
+
+SYNTHESIZED_WIRE_5 <= NOT(SL);
+
+
+
+
+PROCESS(CLK,RST,SYNTHESIZED_WIRE_20)
+BEGIN
+IF (RST = '0') THEN
+	QD <= '0';
+ELSIF (SYNTHESIZED_WIRE_20 = '0') THEN
+	QD <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
+	QD <= SYNTHESIZED_WIRE_17;
+END IF;
+END PROCESS;
+
+
+SYNTHESIZED_WIRE_12 <= DFF_inst1 AND SYNTHESIZED_WIRE_19;
+
+
+SYNTHESIZED_WIRE_9 <= SL AND B;
+
+
+END bdf_type;
