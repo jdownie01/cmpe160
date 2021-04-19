@@ -8,5 +8,5 @@ end inverter;
 
 architecture df of inverter is
 begin
-	Y <=NOT A after 4 ns;
+	Y <=NOT A after 2 ns;
 end;
