@@ -55,7 +55,7 @@ end component;
     signal qa, qb, qc, qd : std_logic;
 
 	begin
-	UUT: shiftreg
+	UUT: serial_adder
     port map (
 		P(0) => i_data(3),
 		P(1) => i_data(2),

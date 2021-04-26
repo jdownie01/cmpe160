@@ -8,7 +8,7 @@ B : in std_logic;
 Y : out std_logic);
 end and2;
 
-architecture df of and2 is
+architecture df of and4 is
 begin
 	Y <= (A and B) after 4 ns;
 end;

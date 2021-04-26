@@ -1,0 +1,104 @@
+/home/jwd2488/Classes/cmpe-160/Exercise12/dflipflop.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/dflipflop.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dff
+-- Compiling architecture behavioral of dff
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/new_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/new_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_new
+-- Compiling architecture behav of tb_new
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/control_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/control_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ctrlunit
+-- Compiling architecture behaviorial of ctrlunit
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/adder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder
+-- Compiling architecture behaviorial of adder
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/structural.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/structural.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity serial_adder
+-- Compiling architecture structural of serial_adder
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd {0 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity serial_adder_state_machine
+-- Compiling architecture structural of serial_adder_state_machine
+** Error: /home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd(38): Signal [mode OUT port] "cout" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error (suppressible): /home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd(39): (vcom-1141) Identifier "control" does not identify a component declaration.
+** Error: /home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd(43): near "if": syntax error
+
+} {8.0 9.0 10.0 11.0} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shiftreg_tb
+-- Compiling architecture bench of shiftreg_tb
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/control_unit_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/control_unit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ctrlunit_tb
+-- Compiling architecture bench of ctrlunit_tb
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/AND_4.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/AND_4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity and2
+-- Compiling architecture df of and2
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftreg
+-- Compiling architecture behavioral of shiftreg
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/INVERTER.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/INVERTER.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity inverter
+-- Compiling architecture df of inverter
+
+} {} {}} /home/jwd2488/Classes/cmpe-160/Exercise12/tb_DM74LS194A.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/jwd2488/Classes/cmpe-160/Exercise12/tb_DM74LS194A.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_DM74LS194A
+-- Compiling architecture behav of tb_DM74LS194A
+
+} {} {}}

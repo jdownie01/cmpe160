@@ -9,15 +9,9 @@ end adder;
 
 architecture behaviorial of adder is
 begin
-	sum <=  (not a and not b and cin) or
-                        (not a and b and not cin) or
-                        (a and not b and not cin) or
-                        (a and b and cin)after 8 ns;
+	sum <=  (a xor b xor cin) after 8 ns;
 
 
-    cout <= (not a and b and cin) or
-                        (a and not b and cin) or
-                        (a and b and not cin) or
-                        (a and b and cin)after 8 ns;
+    cout <= ((a and b)or (a and cin)or (b and cin))after 8 ns;
 end behaviorial;
 

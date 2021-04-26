@@ -12,15 +12,15 @@ entity dff is
 end dff;
 architecture behavioral of dff is  
 begin  
- process(Clk)
-begin
+ process(Clk, Clear)
+	begin
     if(rising_edge(Clk)) then
     	if (Enable='1') then
     		Q <= D after 8 ns;
     	end if;
-    	if (Clear = '0') then
+    end if;
+    if (Clear = '0') then
     		Q <= '0'after 8 ns;
-    	end if; 
-    end if;       
+    end if;    
  end process;  
 end Behavioral; 

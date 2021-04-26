@@ -27,7 +27,7 @@ BEGIN
 	BEGIN
 		IF clear_sm = '1' THEN
 			state <= IDLE;
-			counter <= 0;
+			counter <= '0';
 			ready <= '0';
 		ELSE
 			

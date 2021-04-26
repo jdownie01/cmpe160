@@ -1,41 +1,45 @@
-library ieee;
-use ieee.std_logic_1164.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
 
-entity shiftreg is
-port(
- Clk,Clr, SL, SR, S1, S0	: in std_logic;
- P					: in std_logic_vector(3 downto 0);
- Q					: out std_logic_vector(3 downto 0));
-end shiftreg;
+ENTITY shiftreg IS
+	PORT (
+		Clk, Clr, SL, SR, S1, S0 : IN STD_LOGIC;
+		P : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		Q : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+END shiftreg;
 
-architecture behavioral of shiftreg is
-    begin
-	variable temp: std_logic_vector(3 downto 0); 
-   	if Clr = '0' then
-		wait until rising_edge (Clk);
-   		Output <= "0000" after 22ns;
-   	elsif (S1 = '1' and S0 = '0' and Clr='1') then
-   		wait until rising_edge (Clk);
-   		temp := P;
-   		for i in 0 to 2 loop
-   			temp(i) := temp(i+1);
-   		end loop;
-   		temp(3) := SL;
-   		Output <= temp after 22ns;
-   	elsif (S1 = '0' and S0 = '1' and Clr='1') then
-   		wait until rising_edge (Clk);
-   		temp := P;
-   		for i in 0 to 2 loop
-   			temp(i) := temp(i+1);
-   		end loop;
-   		temp(3) := SR;
-   		Output <= temp after 22ns;
-   	elsif (S1 = '1' and S0 = '1' and Clr='1') then
-   		wait until rising_edge (Clk);
-   		temp := P;
-   		Output <= temp after 22ns;
-   	else
-   		--do nothing
-   	end if;
-end process;
-end behavioral;
+ARCHITECTURE behavioral OF shiftreg IS
+signal temp : STD_LOGIC_VECTOR(3 DOWNTO 0);
+BEGIN
+	PROCESS (Clk)
+		variable v_both : std_logic_vector(1 downto 0);
+	BEGIN
+	  temp <= "0000";
+	  v_both := S1 & S0;
+		IF Clr = '0' THEN
+			Q <= "0000" AFTER 22ns;
+		ELSIF rising_edge(Clk) THEN
+			CASE v_both IS
+				WHEN "10" =>
+					temp <= Q;
+					Q(1) <= temp(0);
+					Q(2) <= temp(1);
+					Q(3) <= temp(2);
+					Q(0) <= SL AFTER 22ns;
+				WHEN "01" =>
+					temp <= Q;
+					temp(0) <= temp(1);
+					temp(1) <= temp(2);
+					temp(2) <= temp(3);
+					temp(3) <= SR;
+					Q <= temp AFTER 22ns;
+				WHEN "11" =>
+					temp <= P;
+					Q <= temp AFTER 22ns;
+				WHEN OTHERS =>
+					Q <= temp AFTER 22ns;
+				END CASE;
+		END IF;
+	END PROCESS;
+END behavioral;
+

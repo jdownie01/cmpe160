@@ -1,0 +1,492 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/jwd2488
+Eadder
+Z0 w1618881326
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 565
+Z3 d/home/jwd2488/Classes/cmpe-160/Exercise12
+Z4 8/home/jwd2488/Classes/cmpe-160/Exercise12/adder.vhd
+Z5 F/home/jwd2488/Classes/cmpe-160/Exercise12/adder.vhd
+l0
+L5 1
+VBgPTgCVCbVo6mU]HdkSB]2
+!s100 <?X8=9<<:[40nI1EHUD`23
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1619400958
+!i10b 1
+Z8 !s108 1619400958.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/adder.vhd|
+Z10 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/adder.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehaviorial
+R1
+R2
+DEx4 work 5 adder 0 22 BgPTgCVCbVo6mU]HdkSB]2
+!i122 565
+l11
+L10 7
+VTd1iLBE0dSC3eQeJbb41m1
+!s100 C3Q:UGFl<W0@H>i_;7cHm0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand2
+Z13 w1618878522
+R1
+R2
+!i122 566
+R3
+Z14 8/home/jwd2488/Classes/cmpe-160/Exercise12/AND_4.vhd
+Z15 F/home/jwd2488/Classes/cmpe-160/Exercise12/AND_4.vhd
+l0
+L4 1
+VTGKN:[F>j^ANige9PY8H92
+!s100 XeNmQLd9]:6YMdDIO67Jk2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/AND_4.vhd|
+Z17 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/AND_4.vhd|
+!i113 1
+R11
+R12
+Adf
+R1
+R2
+DEx4 work 4 and2 0 22 TGKN:[F>j^ANige9PY8H92
+!i122 566
+l12
+L11 4
+VnA[^e;0S_9;l;RHfPL_@80
+!s100 C5>]jdX9CAoImD:EhC7Xd0
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ectrlunit
+Z18 w1619400908
+R1
+R2
+!i122 567
+R3
+Z19 8/home/jwd2488/Classes/cmpe-160/Exercise12/control_unit.vhd
+Z20 F/home/jwd2488/Classes/cmpe-160/Exercise12/control_unit.vhd
+l0
+L4 1
+VU4K6EV?JWb0m>aR36QcI`3
+!s100 Kzk>m1oQ?Vbf5YElDzZ:Y1
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/control_unit.vhd|
+Z22 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/control_unit.vhd|
+!i113 1
+R11
+R12
+Abehaviorial
+R1
+R2
+DEx4 work 8 ctrlunit 0 22 U4K6EV?JWb0m>aR36QcI`3
+!i122 567
+l25
+L14 51
+Vi6aLdf<gdZ6hkQFXgh8:P0
+!s100 b_M3fecC1SkFG<^m47C?X3
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Ectrlunit_tb
+Z23 w1619385618
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 568
+R3
+Z25 8/home/jwd2488/Classes/cmpe-160/Exercise12/control_unit_tb.vhd
+Z26 F/home/jwd2488/Classes/cmpe-160/Exercise12/control_unit_tb.vhd
+l0
+L5 1
+V<DLbJ`==i94j8_<@Qm=mQ1
+!s100 C6N:lTY][b?6PeJ0U^`VD2
+R6
+32
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/control_unit_tb.vhd|
+Z28 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/control_unit_tb.vhd|
+!i113 1
+R11
+R12
+Abench
+R24
+R1
+R2
+DEx4 work 11 ctrlunit_tb 0 22 <DLbJ`==i94j8_<@Qm=mQ1
+!i122 568
+l25
+L8 52
+VC6J[^hWP;`_`;F>bLf4AF2
+!s100 S0T0_=jzdEC[?TK0;j`:_3
+R6
+32
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Edff
+Z29 w1619152015
+R1
+R2
+!i122 569
+R3
+Z30 8/home/jwd2488/Classes/cmpe-160/Exercise12/dflipflop.vhd
+Z31 F/home/jwd2488/Classes/cmpe-160/Exercise12/dflipflop.vhd
+l0
+L4 1
+Vd_>SI0Uo>jC^0?;ZMS`^B3
+!s100 Ld<K;PmaJ6`WYB3cz_78>3
+R6
+32
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/dflipflop.vhd|
+Z33 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/dflipflop.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 3 dff 0 22 d_>SI0Uo>jC^0?;ZMS`^B3
+!i122 569
+l14
+L13 14
+VaLf;d8=M98XKK9MEzC:C50
+!s100 SSR3ANbT>LgI24c8W^G_a3
+R6
+32
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Einverter
+Z34 w1618873356
+R1
+R2
+!i122 570
+R3
+Z35 8/home/jwd2488/Classes/cmpe-160/Exercise12/INVERTER.vhd
+Z36 F/home/jwd2488/Classes/cmpe-160/Exercise12/INVERTER.vhd
+l0
+L4 1
+VNGS1[H2m4cGVWZCn:6CT72
+!s100 ioa2fadc[`H^i;b71EFoe3
+R6
+32
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/INVERTER.vhd|
+Z38 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/INVERTER.vhd|
+!i113 1
+R11
+R12
+Adf
+R1
+R2
+DEx4 work 8 inverter 0 22 NGS1[H2m4cGVWZCn:6CT72
+!i122 570
+l10
+L9 4
+Vb0XJ^h0O;:h@cTa_H2URM1
+!s100 2395c7]4aN3A:^oCW`UJP3
+R6
+32
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Eserial_adder
+Z39 w1619152068
+R1
+R2
+!i122 574
+R3
+Z40 8/home/jwd2488/Classes/cmpe-160/Exercise12/structural.vhd
+Z41 F/home/jwd2488/Classes/cmpe-160/Exercise12/structural.vhd
+l0
+L4 1
+VP19:dCB867knGIaO^1J=S0
+!s100 =>FM`SMKoWLe_dF;:gfLB3
+R6
+32
+Z42 !s110 1619400959
+!i10b 1
+Z43 !s108 1619400959.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/structural.vhd|
+Z45 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/structural.vhd|
+!i113 1
+R11
+R12
+Astructural
+R1
+R2
+DEx4 work 12 serial_adder 0 22 P19:dCB867knGIaO^1J=S0
+!i122 574
+l59
+L14 64
+V[C<?=KPff8MEW>h1=ZSR20
+!s100 I2k2ZS03hQlLb1CHoTRCV1
+R6
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R11
+R12
+Eserial_adder_state_machine
+w1619400957
+R1
+R2
+!i122 576
+R3
+8/home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd
+F/home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd
+l0
+L4 1
+VMl0]nmzC[CmIbfiG1fSC<2
+!s100 >OAHcg<2JaL0U@R?50lLF3
+R6
+32
+R42
+!i10b 1
+R43
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd|
+!s107 /home/jwd2488/Classes/cmpe-160/Exercise12/complete.vhd|
+!i113 1
+R11
+R12
+Eshiftreg
+Z46 w1619383882
+R1
+R2
+!i122 572
+R3
+Z47 8/home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder.vhd
+Z48 F/home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder.vhd
+l0
+L4 1
+V^Ra@J_nW2Ti1GY8`kJ<0j2
+!s100 Z=kR2MzZaZ<l6:8jjX=T90
+R6
+32
+R7
+!i10b 1
+R8
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder.vhd|
+Z50 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 8 shiftreg 0 22 ^Ra@J_nW2Ti1GY8`kJ<0j2
+!i122 572
+l13
+L11 33
+V:CODooNfX;Te3YEcSg<OK2
+!s100 8[PEOllim0GWaY8Qlj3nJ3
+R6
+32
+R7
+!i10b 1
+R8
+R49
+R50
+!i113 1
+R11
+R12
+Eshiftreg_tb
+Z51 w1619384106
+R24
+R1
+R2
+!i122 573
+R3
+Z52 8/home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder_tb.vhd
+Z53 F/home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder_tb.vhd
+l0
+L6 1
+V_1IRjCJ9_QiYE]GiEggDY3
+!s100 GX`=;3_ZlLfgbScPR9lnB2
+R6
+32
+R42
+!i10b 1
+R8
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder_tb.vhd|
+Z55 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/serial_adder_tb.vhd|
+!i113 1
+R11
+R12
+Abench
+R24
+R1
+R2
+DEx4 work 11 shiftreg_tb 0 22 _1IRjCJ9_QiYE]GiEggDY3
+!i122 573
+l25
+L9 57
+VN:Zm1`@mJZP^P`^a;WJR`1
+!s100 26dF^LFP>1NA]Na1JW2Nc0
+R6
+32
+R42
+!i10b 1
+R8
+R54
+R55
+!i113 1
+R11
+R12
+Etb_dm74ls194a
+Z56 w1618877600
+R24
+R1
+R2
+!i122 575
+R3
+Z57 8/home/jwd2488/Classes/cmpe-160/Exercise12/tb_DM74LS194A.vhd
+Z58 F/home/jwd2488/Classes/cmpe-160/Exercise12/tb_DM74LS194A.vhd
+l0
+Z59 L12 1
+V?P6CbA;Mk9SfIO@1J5n@a1
+!s100 ^P6J;lWVE?HDOXLIQc[[00
+R6
+32
+R42
+!i10b 1
+R43
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/tb_DM74LS194A.vhd|
+Z61 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/tb_DM74LS194A.vhd|
+!i113 1
+R11
+R12
+Abehav
+R24
+R1
+R2
+DEx4 work 13 tb_dm74ls194a 0 22 ?P6CbA;Mk9SfIO@1J5n@a1
+!i122 575
+l57
+L15 151
+V=1z[ckIg>8>P1FU=@IOA[0
+!s100 [dV]SI796ej8i[`K=?gG10
+R6
+32
+R42
+!i10b 1
+R43
+R60
+R61
+!i113 1
+R11
+R12
+Etb_new
+Z62 w1618879406
+R24
+R1
+R2
+!i122 571
+R3
+Z63 8/home/jwd2488/Classes/cmpe-160/Exercise12/new_tb.vhd
+Z64 F/home/jwd2488/Classes/cmpe-160/Exercise12/new_tb.vhd
+l0
+R59
+V0Ce2O9ZbcU0n78>74jNjK3
+!s100 hK3@AiRWMi<MHfbHDXYV71
+R6
+32
+R7
+!i10b 1
+R8
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/jwd2488/Classes/cmpe-160/Exercise12/new_tb.vhd|
+Z66 !s107 /home/jwd2488/Classes/cmpe-160/Exercise12/new_tb.vhd|
+!i113 1
+R11
+R12
+Abehav
+R24
+R1
+R2
+DEx4 work 6 tb_new 0 22 0Ce2O9ZbcU0n78>74jNjK3
+!i122 571
+l51
+L15 106
+Vc]?WN]9?Y7<O4N<2<DXJz2
+!s100 =_UX=zbAkUT6X7G;U7z@=2
+R6
+32
+R7
+!i10b 1
+R8
+R65
+R66
+!i113 1
+R11
+R12
